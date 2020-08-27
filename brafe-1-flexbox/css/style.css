@@ -34,13 +34,14 @@ body {
 	padding: 15px 0;
 }
 
-.menu-logo {
-	margin: 0 10px;
-}
 .menu-nav a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.125em;
+}
+
+.menu-logo {
+	margin: 0 10px;
 }
 
 .menu-nav {
@@ -63,15 +64,16 @@ body {
 	.menu-nav {
 		margin: 0px;
 	}
-
 	.menu-logo {
 		margin: 0px;
 	}
 
-	.menu-nav ul li a {
-		padding-left: 0px;
+	a.menu-logo {
+		margin: 0 auto 10px auto;
 	}
+	
 }
+
 
 /* Intro */
 
@@ -81,6 +83,12 @@ body {
 	color: #fff;
 	padding: 150px 0;
 	text-align: center;
+}
+
+@media (max-width: 739px) {
+	.intro {
+		padding: 60px 0;
+	}
 }
 
 .intro h1 {
@@ -117,6 +125,13 @@ body {
 .sobre-item {
 	flex: 1;
 	margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+	.sobre-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 
 .sobre-item img {
@@ -157,7 +172,8 @@ body {
 }
 
 .produtos-item {
-	margin: 0 10px;
+	flex: 1;
+	margin: 0 10px 40px 10px;
 }
 
 .produtos-item h2 {
@@ -203,10 +219,17 @@ h2.produtos-mineiro::before {
 	font-size: 1.125em;
 	font-weight: bold;
 	text-transform: uppercase;
-	width: 180px;
 	display: block;
+	width: 180px;
 	padding: 15px 0;
 	margin: 20px auto 0 auto;
+}
+
+@media (max-width: 739px) {
+	.produtos-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 
 /* Locais */
@@ -250,6 +273,13 @@ h2.produtos-mineiro::before {
 	padding: 10px 20px;
 }
 
+@media (max-width: 739px) {
+	.locais-img, .locais-info {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 /* Assine */
 
 .assine {
@@ -259,7 +289,7 @@ h2.produtos-mineiro::before {
 
 .assine-info {
 	flex: 1;
-	margin: 0 10px;	
+	margin: 0 10px;
 }
 
 .assine-info h2 {
@@ -294,10 +324,24 @@ h2.produtos-mineiro::before {
 	font-family: Georgia, serif;
 }
 
+
+@media (max-width: 739px) {
+	.assine-info {
+		margin: 0 0 20px 0;
+	}
+	.assine form {
+		margin: 0px;
+	}
+
+	.assine input{
+		padding: 10px 0px 10px 3px;
+	}
+}
+
 .assine button {
 	flex: 1;
-	align-self: flex-start;
 	padding: 13px;
+	align-self: flex-start;
 	background: #252525;
 	border: none;
 	font-family: Georgia, serif;
@@ -323,4 +367,10 @@ h2.produtos-mineiro::before {
 
 .footer-img {
 	margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+	.footer-img, .footer p {
+		margin: 10px 0px;
+	}
 }
